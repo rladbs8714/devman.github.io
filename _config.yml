@@ -1,0 +1,36 @@
+title: Devman Blog
+description: >-
+  개발 블로그입니다.
+baseurl: ""
+url: "https://devman.github.io"
+lang: ko
+
+author:
+  name: devman
+
+# Build settings
+markdown: kramdown
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# Multilingual settings
+languages: ["ko", "en"]
+default_lang: "ko"
+
+# Minima settings
+minima:
+  skin: classic
+  date_format: "%Y-%m-%d"
+  social_links:
+    - title: GitHub
+      icon: github
+      url: "https://github.com/devman"
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+  - README.md

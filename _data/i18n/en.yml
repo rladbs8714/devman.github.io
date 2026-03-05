@@ -1,0 +1,9 @@
+site_title: "Devman Blog"
+site_description: "A development blog."
+nav:
+  about: "About"
+  home: "Home"
+posts:
+  title: "Recent Posts"
+lang_switch: "KO"
+lang_name: "English"

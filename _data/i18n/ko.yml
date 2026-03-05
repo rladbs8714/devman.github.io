@@ -1,0 +1,9 @@
+site_title: "Devman Blog"
+site_description: "개발 블로그입니다."
+nav:
+  about: "소개"
+  home: "홈"
+posts:
+  title: "최근 글"
+lang_switch: "EN"
+lang_name: "한국어"

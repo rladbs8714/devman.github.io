@@ -1,0 +1,12 @@
+{%- assign current_lang = page.lang | default: site.lang | default: "ko" -%}
+{%- if current_lang == "ko" -%}
+  {%- assign switch_lang = "en" -%}
+  {%- assign switch_url = page.url | prepend: "/en" -%}
+{%- else -%}
+  {%- assign switch_lang = "ko" -%}
+  {%- assign switch_url = page.url | replace: "/en/", "/" | replace: "/en", "/" -%}
+{%- endif -%}
+
+{%- assign t = site.data.i18n[current_lang] -%}
+
+<a class="lang-switch" href="{{ switch_url | relative_url }}">{{ t.lang_switch }}</a>
